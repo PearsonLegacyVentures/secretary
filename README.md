@@ -2,7 +2,7 @@
 
 A modern records hub for the First Bahamas Branch of Toastmasters Club 1600.
 
-This first build indexes the 2026–2027 meeting minutes from July 2 through September 24, 2026 and turns the recurring details into a usable dashboard:
+This first build indexes the 2026–2027 meeting minutes from July 2 through October 29, 2026 and turns the recurring details into a usable dashboard:
 
 - meeting archive and searchable records
 - attendance and guest trends
@@ -44,7 +44,7 @@ The SPA rewrite is included in `public/_redirects`.
 
 Program year: **2026 / 2027**
 
-Indexed meetings: **13**
+Indexed meetings: **18**
 
 - July 2, 2026
 - July 9, 2026
@@ -59,6 +59,13 @@ Indexed meetings: **13**
 - September 10, 2026
 - September 17, 2026
 - September 24, 2026
+- October 1, 2026
+- October 8, 2026
+- October 15, 2026
+- October 22, 2026
+- October 29, 2026
+
+The October 2026 records also include role assignments, Pathways projects, business discussions, motions, later corrections, and source attendance rosters where provided. The October 1 minutes record an **open bar**, not a numerical refreshment collection. That value is excluded from the recorded-dollar sum. The October 22 WhatsApp-group motion is indexed as **debated without a recorded final vote**, not adopted.
 
 ## Next phase
 
