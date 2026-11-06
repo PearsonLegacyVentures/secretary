@@ -2,12 +2,31 @@ import meetings1 from '../data/meetings1.json';
 import meetings2 from '../data/meetings2.json';
 import meetings3 from '../data/meetings3.json';
 import meetings4 from '../data/meetings4.json';
+import meetings5 from '../data/meetings5.json';
 import type { Meeting, MemberRecord } from '../types';
 
-export const meetings = ([...meetings1,...meetings2,...meetings3,...meetings4] as Meeting[]).sort((a,b)=>a.date.localeCompare(b.date));
+export const meetings = ([...meetings1,...meetings2,...meetings3,...meetings4,...meetings5] as Meeting[]).sort((a,b)=>a.date.localeCompare(b.date));
 
 const aliases: Record<string,string> = {
   'johnathan albury':'Jonathan Albury',
+  'philip e. davis':'Philip Davis',
+  'philip davis':'Philip Davis',
+  'arlington a. hunter':'Arlington Hunter',
+  'arlington hunter':'Arlington Hunter',
+  'bernard f. hanna':'Bernard Hanna',
+  'bernard hanna':'Bernard Hanna',
+  'dwain a. wallace':'Dwain Wallace',
+  'raydon poitier':'Ray-Don Poitier',
+  'ray-don poitier':'Ray-Don Poitier',
+  'ray don poitier':'Ray-Don Poitier',
+  'camron sands':'Camron Sands',
+  'cameron sands':'Camron Sands',
+  'jonathan smith':'Jonathan Smith',
+  'johnathan smith':'Jonathan Smith',
+  'bernie minnis':'Bernie Minnis',
+  'bernard minnis':'Bernie Minnis',
+  'keith major':'Keith Major',
+  'kieth major':'Keith Major',
   'jonathan albury':'Jonathan Albury',
   'jamaal cooper':'Jamaal Cooper',
   'jamal cooper':'Jamaal Cooper',
@@ -41,7 +60,7 @@ const aliases: Record<string,string> = {
 
 export function cleanPersonName(value: string) {
   const v = value
-    .replace(/^(President|VPE|VPM|VPPR|Secretary|Treasurer|SAA|IPP|PP|TM)\s+/i,'')
+    .replace(/^(President|VPE|VPM|VPPR|VVPR|Secretary|Treasurer|SAA|IPP|PP|TM)\s+/i,'')
     .replace(/,\s*(DTM|VC\d|PM\d|MS\d|DL\d|EH\d|PI\d|IP\d)\b.*$/i,'')
     .replace(/\s+/g,' ')
     .trim();
