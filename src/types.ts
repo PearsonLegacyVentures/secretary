@@ -1,4 +1,4 @@
-export type Speaker = { name: string; title: string };
+export type Speaker = { name: string; title: string; pathway?: string; level?: string; project?: string; designation?: string };
 export type MeetingAwards = { speaker?: string; evaluator?: string; tableTopics?: string };
 export type Collections = { raffle: number; refreshments: number; fines: number };
 
@@ -24,6 +24,27 @@ export type Meeting = {
   mattersArising: string;
   highlights: string[];
   actionItems: string[];
+  opening?: {
+    time?: string;
+    calledToOrderBy?: string;
+    invocation?: string;
+    nationalAnthem?: string;
+    mission?: string;
+    rafflePitch?: string;
+  };
+  grammarian?: string;
+  ahUmCounter?: string;
+  timer?: string;
+  evaluationTeam?: string[];
+  leadingOutside?: string[];
+  committeeReports?: string[];
+  otherBusiness?: string[];
+  announcements?: string[];
+  otherMotions?: string[];
+  subsequentCorrections?: string;
+  attendanceNotes?: string;
+  collectionsNote?: string;
+  adjournment?: string;
 };
 
 export type MemberRecord = {
