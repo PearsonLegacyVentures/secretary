@@ -3,3 +3,13 @@
 @media(max-width:1180px){.stats-grid{grid-template-columns:repeat(3,1fr)}.dashboard-bottom{grid-template-columns:1fr 1fr}.dashboard-bottom>:first-child{grid-column:1/-1}.meeting-grid,.meeting-grid.compact{grid-template-columns:repeat(2,1fr)}.grid.three{grid-template-columns:1fr 1fr}.detail-grid{grid-template-columns:1fr}}
 @media(max-width:800px){.mobile{display:grid}.sidebar{transform:translateX(-100%);transition:.2s}.sidebar.open{transform:translateX(0)}.scrim{display:block;position:fixed;z-index:30;inset:0;background:rgba(2,12,21,.55);border:0}.app-shell>main{margin-left:0}.topbar{padding:0 14px;gap:12px}.top-status{display:none}.page-wrap{padding:18px 14px}.page-head{align-items:flex-start;flex-direction:column}.page-head h1{font-size:27px}.stats-grid,.stats-grid.four{grid-template-columns:repeat(2,1fr)}.grid.two,.dashboard-bottom,.grid.three{grid-template-columns:1fr}.dashboard-bottom>:first-child{grid-column:auto}.meeting-grid,.meeting-grid.compact{grid-template-columns:1fr}.detail-hero{flex-direction:column}.detail-hero .mini-grid{width:100%}.table-card{overflow-x:auto}.table-card table{min-width:650px}.action-row{grid-template-columns:34px 1fr auto}.action-row .pill{display:none}.archive-row{grid-template-columns:38px 1fr auto}.archive-row>.icon{display:none}}
 @media(max-width:520px){.stats-grid,.stats-grid.four{grid-template-columns:1fr}.mini-grid{grid-template-columns:repeat(2,1fr)}.detail-hero .mini-grid{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:1fr}.meeting-finance{grid-template-columns:1fr}.word-grid{grid-template-columns:1fr}}
+
+/* OCTOBER MINUTES — SOURCE-FAITHFUL EXTENDED RECORDS */
+.record-entries{margin-top:20px;padding-top:14px;border-top:1px solid #eef0f2}
+.record-entries h3{font-size:10px;font-weight:800;letter-spacing:.055em;text-transform:uppercase;color:#772432;margin:0 0 9px}
+.record-entries ul{padding:0;margin:0;list-style:none;display:grid;gap:7px}
+.record-entries li{position:relative;padding:10px 12px 10px 22px;border-radius:8px;background:#f8fafb;color:#45505d;font-size:11px;line-height:1.6}
+.record-entries li:before{content:"";position:absolute;top:17px;left:11px;width:4px;height:4px;background:#a7804c;border-radius:50%}
+.speeches small{display:block;margin-top:4px;font-size:9px;line-height:1.5;color:#7e6171}
+.collections-note,.attendance-note{font-size:10px;line-height:1.6;color:#754a36;background:#fff8ec;border-radius:7px;padding:9px 11px;margin:12px 0 0}
+.attendance-note{background:#f2f6fb;color:#4e607b}
