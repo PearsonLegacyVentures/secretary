@@ -9,6 +9,7 @@ export const meetings = ([...meetings1,...meetings2,...meetings3,...meetings4,..
 
 const aliases: Record<string,string> = {
   'johnathan albury':'Jonathan Albury',
+  'antoine conliffe':'Antoinne Conliffe',
   'philip e. davis':'Philip Davis',
   'philip davis':'Philip Davis',
   'arlington a. hunter':'Arlington Hunter',
@@ -61,7 +62,7 @@ const aliases: Record<string,string> = {
 export function cleanPersonName(value: string) {
   const v = value
     .replace(/^(President|VPE|VPM|VPPR|VVPR|Secretary|Treasurer|SAA|IPP|PP|TM)\s+/i,'')
-    .replace(/,\s*(DTM|VC\d|PM\d|MS\d|DL\d|EH\d|PI\d|IP\d)\b.*$/i,'')
+    .replace(/,\s*(DTM|IPP|PP|VC\d|PM\d|MS\d|DL\d|EH\d|PI\d|IP\d)\b.*$/i,'')
     .replace(/\s+/g,' ')
     .trim();
   const key=v.toLowerCase();
